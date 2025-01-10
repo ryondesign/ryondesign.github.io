@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RyonDesign Portfolio</title>
+    <title>안녕하세요. 룐디자인입니다.</title>
     <style>
         /* 전체 스타일 리셋 */
         * {
@@ -54,10 +54,41 @@
             color: white;
             text-decoration: none;
             transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .contact-button:hover {
             background-color: #2980b9;
+        }
+
+        .contact-button.kmong {
+            background-color: #00c7ae;
+        }
+
+        .contact-button.kmong:hover {
+            background-color: #00b39d;
+        }
+
+        .kmong-icon {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-color: white;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .kmong-icon::before {
+            content: "K";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: #00c7ae;
+            font-weight: bold;
+            font-size: 14px;
         }
 
         /* 포트폴리오 그리드 */
@@ -131,6 +162,9 @@
             </a>
             <a href="https://instagram.com/your-handle" class="contact-button">
                 <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://kmong.com/your-profile" class="contact-button kmong">
+                <span class="kmong-icon"></span> 크몽
             </a>
         </div>
     </section>
